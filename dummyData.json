@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "first_name": "Levin",
+    "last_name": "Ceaplen",
+    "email": "lceaplen@harvard.edu",
+    "gender": "Polygender"
+  },
+  {
+    "id": 2,
+    "first_name": "Mar",
+    "last_name": "Sanchiz",
+    "email": "msanchiz@woothemes.come",
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "first_name": "Farrel",
+    "last_name": "Brian",
+    "email": "farrelbrian@gmail.com",
+    "gender": "Male"
+  }
+]
