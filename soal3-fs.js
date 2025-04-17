@@ -1,11 +1,18 @@
 const fs = require('fs');
+const data = require("./dummyData.json");
+
+console.log(data, "=> hasil import")
 
 const readJson = () => {
   fs.readFile('dummyData.json', 'utf-8', (err, fileData) => {
     if (err) return console.error("Error reading file:", err);
 
     try {
+      console.log(fileData);
+
       const data = JSON.parse(fileData);
+
+      console.log(data, "=>> object")
 
       const userToUpdate = data.find(user => user.id === 3);
       if (userToUpdate) {

@@ -48,13 +48,13 @@ const userDB = {
   };
   
   loginUser('joko', 'rahasia', (err, user) => {
-    if (err) return console.error("Login error:", err.message);
+    if (err) console.error("Login error:", err.message);
   
     getRole(user, (err, role) => {
-      if (err) return console.error("Role error:", err.message);
+      if (err) console.error("Role error:", err.message);
   
       getMenu(role, (err, route) => {
-        if (err) return console.error("Menu error:", err.message);
+        if (err) console.error("Menu error:", err.message);
   
         console.log("Successful login, redirecting to", route);
       });
